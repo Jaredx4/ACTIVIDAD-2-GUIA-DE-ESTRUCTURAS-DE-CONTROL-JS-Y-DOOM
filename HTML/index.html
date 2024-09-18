@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h2>LUIS JARED APARICIO LINARES FSJ25</h2>
+        <br>
+    </header>
+    <div class="container">
+        <h2>Ejercicio 1</h2>
+        <p>
+            Crear una función que en base a la edad que ingreso el usuario devolver un
+            mensaje si la persona es mayor de edad o no. Utilizar para la condición el operador ternario.
+        </p>
+        <form id="formulario">
+
+            <label for="eje1">Ingresar Edad:</label>
+            <input type="number" id="InEje1" placeholder="Ingresar Edad">
+            <input type="button" onclick="encontrarEdad()" value="Enviar">
+
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 2</h2>
+        <p>
+            Crear una función que determine la nota final de un alumno, la cual depende
+            de lo siguiente:
+        </p>
+        <ul>
+            <li>Examen =20%</li>
+            <li>Tareas = 40%</li>
+            <li>Asistencia = 10%</li>
+            <li>Investigación = 30%</li>
+        </ul>
+        <p>Al final deberá mostrar los datos del alumno, nombre, carnet y nota final.</p>
+
+        <form id="formulario">
+
+
+            <label for="eje1">Ingresar Nombre del Alumno:</label>
+            <input placeholder="Nombre" type="text" id="InAl">
+            place
+
+            <label for="eje1">Ingresar Carnet del Alumno:</label>
+            <input placeholder="carnet" type="text" id="InCarne placet">
+
+            <label for="eje1">Ingresar Nota de examen:</label>
+            <input placeholder="Nota examen" type="number" id="InExa place">
+
+            <label for="eje1">Ingresar Notas de tareas:</label>
+            <input placeholder="Nota Tareas" type="number" id="InTar place">
+
+            <label for="eje1">Ingresar Notas de asistencia:</label>
+            <input placeholder="Notas asistencia" type="number" id="InAs" place>
+
+            <label for="eje1">Ingresar Nota de Investigación:</label>
+            <input placeholder="Nota Investigación" type="number" id="InIn" place>
+
+            <input type="button" onclick="NotaAlumno()" value="Enviar">
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 3</h2>
+        <img src="/Imagenes/ima.jpg">
+        <p>
+            Calcular el aumento de trabajador tomando en cuenta la tabla de categorías de aumento.
+            Para este ejercicio deberá de asignar las siguientes variables: nombre, salario, categoría y
+            aumento. Deberá demostrar los datos del empleado y el aumento salarial.
+        </p>
+
+        <form id="formulario">
+
+            <label for="eje1">Nombre:</label>
+            <input type="text" id="InEje3Nomb" placeholder="Nombre">
+
+            <label for="eje1">Salario:</label>
+            <input type="number" id="InEje3Sal" placeholder="Salario">
+
+            <label for="eje1">Categoria:</label>
+            <input list="letras" id="InEje3Cat" placeholder="Categoria">
+
+            <datalist id="letras">
+                <option value="A"></option>
+                <option value="B"></option>
+                <option value="C"></option>
+                <option value="D"></option>
+            </datalist>
+            <input type="button" onclick="SalarioTrabajadores()" value="Enviar">
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 4</h2>
+        <p>
+            Crear una función que en base a 2 números enteros que ingrese el usuario,
+            calcular cual número es el mayor y devolverlo.
+        </p>
+        <form id="formulario">
+
+            <label for="eje1">Ingresar Numero 1:</label>
+            <input type="number" id="InEje4Num1" placeholder="Numero 1">
+
+            <label for="eje1">Ingresar Numero 2:</label>
+            <input type="number" id="InEje4Num2" placeholder="Numero 2">
+            <input type="button" onclick="numeroMayor()" value="Enviar">
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 5</h2>
+        <p>
+            Realizar una función para una tienda de coches en donde se deberá calcular:
+            Si el coche a la venta es un FORD FIESTA, aplicar un 5% de descuento en la compra. Si el
+            coche a la venta es un FORD FOCUS, el descuento será del 10% y si es un FORD ESCAPE
+            el descuento será del 20%. Mostrar en html el coche seleccionado y el descuento que se
+            aplicara en base a lo que selecciono el usuario.
+        </p>
+        <form id="formulario">
+            <label for="eje1">Ingresar Coche:</label>
+            <input type="text" list="Modelo" id="modeloCarros" placeholder="Ingresar coche">
+
+            <datalist id="Modelo">
+                <option value="FORD FIESTA"></option>
+                <option value="FORD FOCUS"></option>
+                <option value="FORD ESCAPE"></option>
+            </datalist>
+
+            <input type="button" onclick="coche()" value="Enviar">
+        </form>
+
+        <h4 class="one-more-chance" id="etiqueta"></h4>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 6</h2>
+        <p>
+            Crear una Función para calcular el descuento en viajes turísticos tomando
+            en cuenta lo siguiente:
+            Si el usuario introduce como origen la ciudad de Palma y como destino La costa del Sol, el
+            descuento será de 5%, si el destino es Panchimalco el descuento será del 10% y si el destino
+            es Puerto el Triunfo el descuento será del 15%.
+        </p>
+        <form id="formulario">
+
+            <label for="eje1">Ingresar Ciudad origen:</label>
+            <input type="text" list="Modelo2" id="InEje6Co" placeholder="Ingresar ciudad de origen">
+
+            <datalist id="Modelo2">
+                <option value="La Palma"></option>
+            </datalist>
+
+            <p></p>
+
+            <label for="eje1">Ingresar Ciudad de destino:</label>
+            <input type="text" list="Modelo3" id="InEje6Cd" placeholder="Ingresar ciudad de destino">
+
+            <datalist id="Modelo3">
+                <option value="La costa del Sol"></option>
+                <option value="Panchimalco"></option>
+                <option value="Puerto el Triunfo"></option>
+            </datalist>
+
+            <input type="button" onclick="Viajes()" value="Enviar">
+        </form>
+
+        <h4 class="one-more-chance" id="respuesta-2"> </h4>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 7</h2>
+        <p>
+            Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+        </p>
+        <ul>
+            <li>La cantidad de valores negativos ingresados</li>
+            <li>La cantidad de valores positivos ingresados</li>
+            <li>La cantidad de multiplos de 15</li>
+            <li>El valor acumulado de los numeros que son pares</li>
+        </ul>
+        <form id="formulario">
+
+            <label for="eje1">Ingresar Edad:</label>
+            <input type="number" id="EjE71" placeholder="Numero 1">
+            <input type="number" id="EjE72" placeholder="Numero 2">
+            <input type="number" id="EjE73" placeholder="Numero 3">
+            <input type="number" id="EjE74" placeholder="Numero 4">
+            <input type="number" id="EjE75" placeholder="Numero 5">
+            <input type="number" id="EjE76" placeholder="Numero 6">
+            <input type="number" id="EjE77" placeholder="Numero 7">
+            <input type="number" id="EjE78" placeholder="Numero 8">
+            <input type="number" id="EjE79" placeholder="Numero 9">
+            <input type="number" id="EjE710" placeholder="Numero 10">
+            <input type="button" onclick="valoresNumeros() " value="Enviar">
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 8</h2>
+        <p>
+            Escriba un programa que muestre la tabla de multiplicar del 1 al 10 del número ingresado
+            por el usuario.
+        </p>
+        <form id="formulario">
+
+            <label for="eje1">Ingresar la cantidad de multiplicandos:</label>
+            <input type="number" id="InEje81" placeholder="Ingresar multiplicando">
+
+
+            <label for="eje1">Ingresar El numero a multiplicar:</label>
+            <input type="number" id="InEje82" placeholder="Ingresar numero a multiplicar">
+
+            <input type="button" onclick="multiplicar() " value="Enviar">
+        </form>
+
+        <h4 id="tabla"></h4>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 9</h2>
+        <p>
+            Crear programa donde se introduce una temperatura en Celsius y salga el resultado en
+            Fahrenheit, una vez teniendo la temperatura en Fahrenheit deberá devolver lo siguiente:
+        </p>
+        <ul>
+            <li>Si ºF está entre 14 y 32, sale la frase “Temperatura baja”</li>
+            <li>Si ºF está entre 32 y 68, sale la frase “Temperatura adecuada”</li>
+            <li>Si ºF está entre 68 y 96, sale la frase “Temperatura alta”</li>
+            <li>Si no está entre ningún caso anterior la frase “Temperatura desconocida”</li>
+        </ul>
+        <form id="formulario">
+
+            <label for="eje1">Ingresar Temperatura en °C:</label>
+            <input type="number" class="tempera" placeholder="Ingresar temperatura en °C">
+            <input type="button" onclick="temperaturas()" value="Enviar">
+        </form>
+        <h4 class="one-more-chance" id="Temp"></h4>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 10</h2>
+        <p>
+            Se cuenta con la siguiente información:
+        </p>
+
+        <ul>
+            <li>Las edades de 5 estudiantes del turno mañana.</li>
+            <li>Las edades de 6 estudiantes del turno tarde</li>
+            <li>Las edades de 11 estudiantes del turno noche</li>
+        </ul>
+        <h4>Nota: Las edades de cada estudiante se deberán ingresar por la web.</h4>
+        <p>Lo que queremos devolver:</p>
+        <ul>
+            <li>Obtener el promedio de las edades de cada turno (tres promedios).</li>
+            <li>Imprimir dichos promedios (promedio de cada turno).</li>
+            <li>Mostrar por pantalla un mensaje que indique cuál de los tres turnos tiene un
+                promedio de edades mayor.</li>
+        </ul>
+
+
+        <form class="formulario-EJE10" id="formulario">
+            <div class="form" id="formulario1">
+                <label for="eje1" class="eje10">Ingresar Edad de 5 estudiantes de la mañana:</label>
+                <input type="number" id="Edad1" placeholder="Edad 1">
+                <input type="number" id="Edad2" placeholder="Edad 2">
+                <input type="number" id="Edad3" placeholder="Edad 3">
+                <input type="number" id="Edad4" placeholder="Edad 4">
+                <input type="number" id="Edad5" placeholder="Edad 5">
+            </div>
+
+            <div class="form" id="formulario2">
+                <label for="eje1" class="eje10">Ingresar Edad de 5 estudiantes de la tarde:</label>
+                <input type="number" id="Edad6" placeholder="Edad 1">
+                <input type="number" id="Edad7" placeholder="Edad 2">
+                <input type="number" id="Edad8" placeholder="Edad 3">
+                <input type="number" id="Edad9" placeholder="Edad 4">
+                <input type="number" id="Edad10" placeholder="Edad 5">
+            </div>
+
+            <div class="form" id="formulario3">
+                <label for="eje1" class="eje10 eje101">Ingresar Edad de 6 estudiantes del turno de la noche:</label>
+                <input type="number" id="Edad11" placeholder="Edad 1">
+                <input type="number" id="Edad12" placeholder="Edad 2">
+                <input type="number" id="Edad13" placeholder="Edad 3">
+                <input type="number" id="Edad14" placeholder="Edad 4">
+                <input type="number" id="Edad15" placeholder="Edad 5">
+                <input type="number" id="Edad16" placeholder="Edad 6">
+                <input type="number" id="Edad17" placeholder="Edad 7">
+                <input type="number" id="Edad18" placeholder="Edad 8">
+                <input type="number" id="Edad19" placeholder="Edad 9">
+                <input type="number" id="Edad20" placeholder="Edad 10">
+                <input type="number" id="Edad21" placeholder="Edad 11">
+            </div>
+        </form>
+
+        <input class="buton10" type="button" onclick="Estudiantes_edades()" value="Enviar">
+    </div>
+
+
+
+    <script src="/JS/script.js"></script>
+</body>
+
+</html>

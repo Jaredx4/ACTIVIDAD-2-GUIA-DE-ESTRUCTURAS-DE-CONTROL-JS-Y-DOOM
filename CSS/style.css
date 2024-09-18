@@ -1,0 +1,58 @@
+body {
+    width: 90%;
+}
+
+.container {
+    margin-left: 0;
+    margin-right: 45rem;
+    margin-bottom: 4rem;
+}
+
+label {
+    display: block;
+}
+
+input[type="number"],
+input[type="button"] {
+
+    display: block;
+    padding: .2rem;
+    margin: .3rem 0 .2rem 0;
+    border-radius: .3rem;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.one-more-chance {
+    background-color: coral;
+    width: 60%;
+}
+
+.formulario-EJE10 {
+
+    display: flex;
+
+}
+
+.form {
+
+    margin: .5rem;
+}
+
+.eje10 {
+
+    text-align: left;
+    font-weight: bold;
+}
+
+.eje101 {
+    width: 14rem;
+}
+
+.buton10 {
+    width: 36rem;
+}
